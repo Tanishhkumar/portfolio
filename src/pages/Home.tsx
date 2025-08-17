@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import tanishLogo from "../assets/images/tanish.jpg"
 
 const HomePage = () => {
   return (
@@ -77,7 +78,7 @@ const HomePage = () => {
               <div className="relative w-72 h-72 md:w-96 md:h-96">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 animate-pulse"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=800&h=800"
+                  src={tanishLogo} 
                   alt="Tanish Kumar"
                   className="rounded-full object-cover w-full h-full border-4 border-background shadow-xl"
                 />
