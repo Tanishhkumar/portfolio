@@ -1,10 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { GitHub, LinkedIn, Twitter, Email, YouTube } from "@mui/icons-material";
 import { Separator } from "@/components/ui/separator";
+import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
+
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  
+  function TwitterXIcon(props: SvgIconProps) {
+  return (
+    <SvgIcon {...props} viewBox="0 0 24 24">
+      <path d="M18.244 2H21.68l-7.46 8.52L22.49 22h-6.563l-5.15-6.617L4.8 22H1.364l7.96-9.09L1.01 2h6.69l4.65 6.062L18.244 2zm-2.31 18h2.07L8.166 4h-2.2l10.968 16z" />
+    </SvgIcon>
+  );
+}
+
 
   return (
     <footer className="bg-background py-12">
@@ -15,36 +28,27 @@ const Footer = () => {
               Tanish<span className="text-primary">Portfolio</span>
             </h3>
             <p className="text-muted-foreground max-w-sm">
-              A passionate full-stack developer with 5 years of experience
-              crafting elegant solutions to complex problems.
+              A passionate full-stack developer crafting elegant solutions to
+              complex problems.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
-              <Link
-                to="/"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
+              <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
                 Home
               </Link>
-              <Link
-                to="/about"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
+              <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
                 About
               </Link>
-              <Link
-                to="/projects"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
+              <Link to="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
                 Projects
               </Link>
-              <Link
-                to="/contact"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
+              <Link to="/services" className="text-muted-foreground hover:text-foreground transition-colors">
+                Services
+              </Link>
+              <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </Link>
             </nav>
@@ -58,37 +62,46 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Tanishhkumar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Github size={20} />
+                <GitHub fontSize="small" />
                 <span className="sr-only">GitHub</span>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/tanish-kumar-9a8324311"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Linkedin size={20} />
+                <LinkedIn fontSize="small" />
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/Tanish_kumar01"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Twitter size={20} />
-                <span className="sr-only">Twitter</span>
+                <TwitterXIcon fontSize="small" />
+                <span className="sr-only">Twitter (X)</span>
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="https://youtube.com/@yourchannel"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Mail size={20} />
+                <YouTube fontSize="small" />
+                <span className="sr-only">YouTube</span>
+              </a>
+              <a
+                href="mailto:tanishkumarp436@gmail.com"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Email fontSize="small" />
                 <span className="sr-only">Email</span>
               </a>
             </div>

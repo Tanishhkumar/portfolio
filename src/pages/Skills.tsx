@@ -21,13 +21,12 @@ const SkillsPage = () => {
     {
       category: "Frontend Development",
       skills: [
-        { name: "React", level: 92, experience: "4+ years", icon: "R" },
-        { name: "JavaScript", level: 90, experience: "5+ years", icon: "J" },
-        { name: "TypeScript", level: 85, experience: "3+ years", icon: "T" },
-        { name: "HTML/CSS", level: 95, experience: "5+ years", icon: "H" },
-        { name: "Next.js", level: 80, experience: "2+ years", icon: "N" },
-        { name: "Tailwind CSS", level: 88, experience: "3+ years", icon: "T" },
-        { name: "Redux", level: 80, experience: "3+ years", icon: "R" },
+        { name: "React", level: 92, experience: "1+ years", icon: "R" },
+        { name: "JavaScript", level: 90, experience: "1.5+ years", icon: "J" },
+        { name: "TypeScript", level: 85, experience: "1 years", icon: "T" },
+        { name: "HTML/CSS", level: 95, experience: "2+ years", icon: "H" },
+        { name: "Next.js", level: 75, experience: "1+ years", icon: "N" },
+        { name: "Tailwind CSS", level: 85, experience: "1+ years", icon: "T" },        
       ]
     },
     {
@@ -35,19 +34,15 @@ const SkillsPage = () => {
       skills: [
         { name: "Node.js", level: 88, experience: "4+ years", icon: "N" },
         { name: "Express.js", level: 85, experience: "4+ years", icon: "E" },
-        { name: "Python", level: 75, experience: "3+ years", icon: "P" },
-        { name: "Django", level: 70, experience: "2+ years", icon: "D" },
-        { name: "GraphQL", level: 78, experience: "2+ years", icon: "G" },
         { name: "RESTful APIs", level: 90, experience: "4+ years", icon: "R" },
       ]
     },
     {
       category: "Database",
       skills: [
-        { name: "MongoDB", level: 85, experience: "4+ years", icon: "M" },
-        { name: "PostgreSQL", level: 82, experience: "3+ years", icon: "P" },
-        { name: "MySQL", level: 78, experience: "3+ years", icon: "M" },
-        { name: "Redis", level: 70, experience: "2+ years", icon: "R" },
+        { name: "MongoDB", level: 85, experience: "working", icon: "M" },
+        { name: "MySQL", level: 78, experience: "1+ years", icon: "M" },
+        
       ]
     },
     {

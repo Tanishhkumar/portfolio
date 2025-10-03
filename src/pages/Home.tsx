@@ -1,12 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import tanishLogo from "../assets/images/tanish.jpg"
+import tanishportfolio from "../images/tanishportfolio.jpg";
+import { GitHub, LinkedIn, Twitter, Email, YouTube } from "@mui/icons-material";
+import { Separator } from "@/components/ui/separator";
+import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 
 const HomePage = () => {
+
+  function TwitterXIcon(props: SvgIconProps) {
+    return (
+      <SvgIcon {...props} viewBox="0 0 24 24">
+        <path d="M18.244 2H21.68l-7.46 8.52L22.49 22h-6.563l-5.15-6.617L4.8 22H1.364l7.96-9.09L1.01 2h6.69l4.65 6.062L18.244 2zm-2.31 18h2.07L8.166 4h-2.2l10.968 16z" />
+      </SvgIcon>
+    );
+  }
   return (
+
+
+
+
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-20 md:py-28">
@@ -28,8 +43,7 @@ const HomePage = () => {
                 Hi, I'm <span className="text-primary">Tanish Kumar</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-lg">
-                A passionate full-stack developer with 2 years of experience,
-                specializing in building exceptional digital experiences.
+                A passionate Full-Stack Developer who loves crafting modern, scalable, and user-friendly web applications. I specialize in building end-to-end digital solutions—from intuitive front-end interfaces to powerful back-end systems. With a focus on clean code, performance, and great user experience, I enjoy turning ideas into real-world products that make an impact.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg">
@@ -43,28 +57,47 @@ const HomePage = () => {
               </div>
               <div className="flex space-x-5 mt-8">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Tanishhkumar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  <Github size={22} />
+                  <GitHub fontSize="small" />
+                  <span className="sr-only">GitHub</span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/tanish-kumar-9a8324311"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  <Linkedin size={22} />
+                  <LinkedIn fontSize="small" />
+                  <span className="sr-only">LinkedIn</span>
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/Tanish_kumar01"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  <Twitter size={22} />
+                  <TwitterXIcon fontSize="small" />
+                  <span className="sr-only">Twitter (X)</span>
+                </a>
+                <a
+                  href="https://youtube.com/@yourchannel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <YouTube fontSize="small" />
+                  <span className="sr-only">YouTube</span>
+                </a>
+                <a
+                  href="mailto:tanishkumarp436@gmail.com"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Email fontSize="small" />
+                  <span className="sr-only">Email</span>
                 </a>
               </div>
             </motion.div>
@@ -78,7 +111,7 @@ const HomePage = () => {
               <div className="relative w-72 h-72 md:w-96 md:h-96">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 animate-pulse"></div>
                 <img
-                  src={tanishLogo} 
+                  src={tanishportfolio}
                   alt="Tanish Kumar"
                   className="rounded-full object-cover w-full h-full border-4 border-background shadow-xl"
                 />
@@ -116,8 +149,8 @@ const HomePage = () => {
               "MongoDB",
               "Next.js",
               "Tailwind CSS",
-              "GraphQL",
-              "PostgreSQL",
+              "MySql",
+              "Gsap",
               "Docker",
               "AWS",
               "Firebase",

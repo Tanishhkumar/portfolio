@@ -13,72 +13,73 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
+import tanishportfolio from "../images/tanishportfolio.jpg"
 const AboutPage = () => {
   return (
     <div className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         {/* About Section */}
         <section className="mb-20">
-          <div className="flex flex-col md:flex-row gap-10 items-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="md:w-2/5"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1603575448878-868a20723f5d?auto=format&fit=crop&q=80&w=600&h=800"
-                alt="Tanish Kumar"
-                className="rounded-xl shadow-lg w-full h-auto max-w-md mx-auto"
-              />
-            </motion.div>
+  {/* Image Section Full Screen */}
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}
+    className="w-full h-screen flex items-center justify-center"
+  >
+    <img
+      src={tanishportfolio}
+      alt="Portrait of Tanish Kumar, Full-Stack Developer"
+      className="rounded-xl shadow-lg max-w-4xl w-full h-auto object-cover"
+    />
+  </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="md:w-3/5"
-            >
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="h-1 w-12 bg-primary" />
-                <span className="text-primary font-medium">About Me</span>
-              </div>
-              <h1 className="text-4xl font-bold mb-6">
-                I'm <span className="text-primary">Tanish Kumar</span>, a
-                Full-Stack Developer
-              </h1>
-              <p className="text-muted-foreground mb-6 text-lg">
-                I'm a passionate full-stack developer with 2 years of experience
-                building web applications using modern technologies. I
-                specialize in creating responsive, user-friendly interfaces with
-                React and building robust backend systems.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                My journey in tech began at the University of Technology where I
-                earned my Bachelor's in Computer Science. I've since worked with
-                startups and established companies alike, helping build products
-                that solve real problems.
-              </p>
-              <p className="text-muted-foreground mb-8">
-                When I'm not coding, you can find me hiking, reading about new
-                technologies, or contributing to open-source projects. I'm
-                always eager to learn new skills and take on challenging
-                projects.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button asChild>
-                  <Link to="/contact">
-                    Get In Touch <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button variant="outline" className="flex items-center">
-                  <Download className="mr-2 h-4 w-4" /> Download CV
-                </Button>
-              </div>
-            </motion.div>
-          </div>
+  {/* Text Section Below */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+    className="max-w-4xl mx-auto mt-12 px-6 text-center"
+  >
+    <div className="flex items-center justify-center space-x-2 mb-4">
+      <div className="h-1 w-12 bg-primary" />
+      <span className="text-primary font-medium">About Me</span>
+    </div>
+    <h1 className="text-4xl font-bold mb-6">
+      I'm <span className="text-primary">Tanish Kumar</span>, a Full-Stack Developer
+    </h1>
+    <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+      I'm a passionate full-stack developer building web applications 
+      using modern technologies. I specialize
+      in creating responsive, user-friendly interfaces with React and
+      building robust backend systems.
+    </p>
+    <p className="text-muted-foreground mb-6 leading-relaxed">
+      My journey in tech began at the University of Technology where I
+      earned my Bachelor's in Computer Science. I've since worked with
+      startups and established companies alike, helping build products
+      that solve real problems.
+    </p>
+    <p className="text-muted-foreground mb-8 leading-relaxed">
+      When I'm not coding, you can find me hiking, reading about new
+      technologies, or contributing to open-source projects. I'm always
+      eager to learn new skills and take on challenging projects.
+    </p>
+    <div className="flex justify-center flex-wrap gap-4">
+      <Button asChild>
+        <Link to="/contact">
+          Get In Touch <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+      </Button>
+      <Button variant="outline" asChild>
+        <a href="/Tanish_Kumar_CV.pdf" download>
+          <Download className="mr-2 h-4 w-4" /> Download CV
+        </a>
+      </Button>
+    </div>
+  </motion.div>
         </section>
+
 
         {/* Experience & Education Tabs */}
         <section className="mb-20">

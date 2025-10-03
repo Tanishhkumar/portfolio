@@ -5,6 +5,9 @@ import { MenuIcon, XIcon } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { motion } from "framer-motion";
 
+
+
+
 interface NavItem {
   label: string;
   href: string;
@@ -16,6 +19,7 @@ const navItems: NavItem[] = [
   { label: "Skills", href: "/skills" },
   { label: "Projects", href: "/projects" },
   { label: "Experience", href: "/experience" },
+  { label: "Services", href: "/services" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -10,8 +10,10 @@ import AboutPage from "./pages/About";
 import SkillsPage from "./pages/Skills";
 import ProjectsPage from "./pages/Projects";
 import ExperiencePage from "./pages/Experience";
+import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
 import NotFoundPage from "./pages/NotFound";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/skills" element={<SkillsPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
