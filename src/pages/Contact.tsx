@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 
   export default function ContactUs() {
@@ -9,6 +9,10 @@ import emailjs from "emailjs-com";
   });
 
   const [status, setStatus] = useState("");
+
+    useEffect(() => {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [])
 
   const handleChange = (e :any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
