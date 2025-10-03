@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-export default function ContactUs() {
+  export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,11 +10,11 @@ export default function ContactUs() {
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e :any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
 
     setStatus("Sending...");
@@ -82,7 +82,7 @@ export default function ContactUs() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              rows="4"
+              rows={4}
               className="w-full border rounded-lg px-3 py-2 focus:ring focus:ring-stone-400"
               placeholder="Write your message here..."
               required
