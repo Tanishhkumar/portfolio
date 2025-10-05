@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -15,6 +15,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import tanishportfolio from "../images/tanishportfolio.jpg"
 const AboutPage = () => {
+
+  useEffect(() => {
+       window.scrollTo({ top: 0, behavior: "smooth" });
+      }, [])
   return (
     <div className="py-16 md:py-24">
       <div className="container mx-auto px-4">

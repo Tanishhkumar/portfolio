@@ -10,6 +10,10 @@ const Experience = () => {
   const sectionsRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
+       window.scrollTo({ top: 0, behavior: "smooth" });
+      }, [])
+
+  useEffect(() => {
     if (!containerRef.current) return;
 
     // Animate heading

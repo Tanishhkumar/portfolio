@@ -128,6 +128,10 @@ const Services: React.FC = () => {
     });
   }, []);
 
+  useEffect(() => {
+       window.scrollTo({ top: 0, behavior: "smooth" });
+      }, [])
+
   return (
     <div className="min-h-screen bg-black text-gray-800 p-8">
       {/* Header */}

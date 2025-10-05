@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -17,6 +17,11 @@ interface SkillCategory {
 }
 
 const SkillsPage = () => {
+
+  useEffect(() => {
+       window.scrollTo({ top: 0, behavior: "smooth" });
+      }, [])
+
   const skillCategories: SkillCategory[] = [
     {
       category: "Frontend Development",

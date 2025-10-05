@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,11 @@ interface Project {
 }
 
 const ProjectsPage = () => {
+
+  useEffect(() => {
+       window.scrollTo({ top: 0, behavior: "smooth" });
+      }, [])
+
   const [filter, setFilter] = useState<string>("all");
 
   const projects: Project[] = [
