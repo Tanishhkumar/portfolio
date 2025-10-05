@@ -113,7 +113,7 @@ const AboutPage = () => {
               >
                 {[
                   {
-                    role: "Senior Full-Stack Developer",
+                    role: "MERN Stack Developer",
                     company: "Tech Innovations Inc.",
                     period: "2022 - Present",
                     description:
@@ -121,17 +121,17 @@ const AboutPage = () => {
                     techStack: ["React", "Node.js", "MongoDB", "AWS"],
                   },
                   {
-                    role: "Full-Stack Developer",
-                    company: "Digital Solutions Ltd.",
-                    period: "2020 - 2022",
+                    role: "Frontend Developer",
+                    company: "Freelancing.",
+                    period: "2024 - 2026",
                     description:
                       "Developed and maintained multiple client websites and web applications. Worked on both frontend and backend implementations.",
-                    techStack: ["React", "Express.js", "PostgreSQL", "Docker"],
+                    techStack: ["React", "Express.js", "Mysql", "Node.js"],
                   },
                   {
-                    role: "Frontend Developer",
+                    role: "Full Stack Developer",
                     company: "Creative Web Agency",
-                    period: "2018 - 2020",
+                    period: "2023 - 2024",
                     description:
                       "Created responsive and interactive user interfaces for client websites. Collaborated with designers to implement pixel-perfect designs.",
                     techStack: ["React", "JavaScript", "SCSS", "Redux"],
@@ -180,27 +180,27 @@ const AboutPage = () => {
               >
                 {[
                   {
-                    degree: "Master of Science in Computer Science",
-                    institution: "Tech University",
-                    period: "2016 - 2018",
+                    degree: "Bachelor of Computer Applications(BCA)",
+                    institution: "Asian International University (Imphal,Manipur📍)",
+                    period: "2023 - 2026",
                     description:
                       "Specialized in Software Engineering and Data Systems. Completed thesis on optimizing database queries for large-scale applications.",
                     achievements: [
-                      "GPA: 3.9/4.0",
-                      "Dean's List",
-                      "Research Assistant",
+                      "GPA: 2.9/4.0",
+                      "Dean’s List (Academic Excellence Award)",
+                      "Graduated with Honors",
                     ],
                   },
                   {
-                    degree: "Bachelor of Science in Computer Science",
-                    institution: "University of Technology",
+                    degree: "Higher Secondary Education (Class XII) — Science Stream (PCM) ",
+                    institution: "Sita Saran Memorial School (Patna,Bihar📍)",
                     period: "2012 - 2016",
                     description:
-                      "Focused on software development fundamentals, algorithms, and web technologies. Participated in several hackathons and coding competitions.",
+                      "Focused on analytical and problem-solving skills through core science subjects.Participated in school-level science exhibitions and academic competitions.",
                     achievements: [
-                      "Graduated with Honors",
-                      "Web Development Club President",
-                      "Hackathon Winner",
+                      "Academic Honors",
+                      "Teamwork Skills",
+                      "Math Excellence",
                     ],
                   },
                 ].map((item, index) => (
@@ -256,25 +256,25 @@ const AboutPage = () => {
                 role: "Project Manager",
                 company: "Tech Innovations",
                 testimonial:
-                  "Alex is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills make him an invaluable team member.",
+                  "Tanish is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills make him an invaluable team member.",
                 avatar:
                   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100&h=100",
               },
               {
-                name: "Michael Chen",
+                name: "Aditya",
                 role: "CTO",
                 company: "StartUp Solutions",
                 testimonial:
-                  "Working with Alex was a pleasure. He not only met all our technical requirements but also provided valuable insights that improved our product.",
+                  "Working with Tanish was a pleasure. He not only met all our technical requirements but also provided valuable insights that improved our product.",
                 avatar:
                   "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100&h=100",
               },
               {
-                name: "Emily Rodriguez",
+                name: "Vansh Pratcholi",
                 role: "Frontend Developer",
                 company: "Digital Agency",
                 testimonial:
-                  "As a colleague, Alex was always willing to help and share his knowledge. His coding standards and approach to architecture have influenced how I work.",
+                  "As a colleague, Tanish was always willing to help and share his knowledge. His coding standards and approach to architecture have influenced how I work.",
                 avatar:
                   "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100&h=100",
               },
