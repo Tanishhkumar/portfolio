@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import weather_img from "../images/Weather_app_Screenshot.png"
 
 interface Project {
   id: string;
@@ -73,11 +74,11 @@ const ProjectsPage = () => {
       id: "weather-app",
       title: "Weather Forecast App",
       description: "A sleek weather application providing real-time forecasts, radar maps, and weather alerts. Features location-based forecasts and customizable widgets.",
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=800&h=500",
+      image: weather_img,
       category: ["Web App", "Frontend"],
       technologies: ["React", "OpenWeather API", "ChartJS", "PWA"],
-      demoLink: "https://example.com/demo5",
-      githubLink: "https://github.com/example/project5",
+      demoLink: "https://weather-app-beta-three-10.vercel.app/",
+      githubLink: "https://github.com/Tanishhkumar/weather-app",
       featured: false
     },
     {
